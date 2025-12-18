@@ -39,8 +39,6 @@ public class Main {
                     System.out.println("ساعت و تاریخ تحویل را مشخص کنید: (yyyy-MM-ddTHH:mm) ");
                     String deliveryTimeInput=scanner.nextLine();
                     LocalDateTime deliveryDateTime=LocalDateTime.parse(deliveryTimeInput);
-                    String date = java.time.LocalDate.now().toString();
-                    String dateTime = java.time.LocalDateTime.now().toString();
                     int id = orders.size() + 1;
                     Order order = createOrder(id,foodName,isDelivery,address,deliveryDateTime); //R
                     orders.add(order);
